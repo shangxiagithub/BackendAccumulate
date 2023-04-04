@@ -35,7 +35,7 @@ public class QuartzTest implements Job {
 			trigger.setGroup("myTriggerGroup");
 			// 指明trigger的name
 			trigger.setName("myTrigger");
-			trigger.setCronExpression(new CronExpression("0 8 11 ? * TUE"));
+			trigger.setCronExpression(new CronExpression("0 24 15 ? * TUE"));
 			// 用scheduler将JobDetail与Trigger关联在一起，开始调度任务
 			sched.scheduleJob(jobDetail, trigger);
 
